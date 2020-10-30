@@ -9,6 +9,9 @@ Requires an instrument_download_list_file, which is a CSV file containing
 the fields "instrument_name" and "download". If download is not blank, the
 instrument will be included in the download.
 
+Only instruments belonging to the given event are downloaded in the event's
+file, to keep file sizes down and column counts more manageable.
+
 The API URL, API token, and filter logic are all passed using environment
 variables: API_URL, API_TOK, and FILTER, respectively.
 
